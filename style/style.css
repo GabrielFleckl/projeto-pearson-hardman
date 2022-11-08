@@ -64,7 +64,7 @@ i {
 .banner {
   max-width: 50%;
   padding: 4rem;
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   transition: 0.6s;
 }
@@ -104,4 +104,160 @@ i {
 
 .dot.active {
   background-color: #d92123;
+}
+
+.text-image-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.text-container {
+  flex: 2 1 0;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+.section-subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #d92123;
+}
+
+.section-title {
+  color: #191919;
+  font-size: 2rem;
+}
+
+.btn {
+  padding: 1.2rem 1.8rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #d92123;
+  align-self: flex-end;
+}
+
+.image-container {
+  flex: 1 1 300px;
+  position: relative;
+}
+
+.image-container i {
+  position: absolute;
+}
+
+#other-services {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.service {
+  position: relative;
+}
+
+.service i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.service-info {
+  background-color: #eff3f4;
+  padding: 2rem 1.4rem;
+  min-height: 250px;
+  margin-top: -3rem;
+  z-index: 2;
+  position: relative;
+}
+
+.service h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+#about #about-text {
+  background-image: url("../img/pattern.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 3rem;
+}
+
+#about-text .section-subtitle,
+#about-text .section-title {
+  color: #fff;
+}
+
+#about-text i {
+  background-color: transparent;
+}
+
+.about-description {
+  display: flex;
+  align-items: center;
+}
+.about-description h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#about-data {
+  flex: 1 1 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+#about-data .data {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: -1px;
+  margin-left: -1px;
+}
+#about-data .data:first-child {
+  border-bottom: 1px solid #191919;
+  border-right: 1px solid #191919;
+}
+#about-data .data:last-child {
+  border-top: 1px solid #191919;
+  border-left: 1px solid #191919;
+}
+#about-data .data i {
+  background-color: transparent;
+  color: #d92123;
+  font-size: 4rem;
+  padding: 0;
+}
+
+.data .number {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.data .text {
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
