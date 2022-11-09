@@ -29,6 +29,7 @@ i
   color: variables.$primary-text-color
   margin-bottom: 2rem
   position: relative
+  
 
 #inner-header
   display: flex
@@ -58,6 +59,7 @@ i
   opacity: 0
   position: absolute
   transition: 0.6s
+  margin-left: 2rem
 
   h2
     font-size: 4rem
@@ -408,8 +410,45 @@ i
 .phone-info
   color: variables.$secondary-color
 
+#menu,
+#close-menu
+  font-size: 2rem
+  padding: 1rem
+  display: none
+
+  &
+    position: absolute
+    top: 0
+    right: 0
+
+#mobile-navbar
+  position: fixed
+  top: 0
+  left: 100%
+  height: 100%
+  width: 100%
+  background-color: rgba(0, 0, 0, 0.95)
+  display: flex
+  flex-direction: column
+  padding: 4rem 2rem
+  transition: 0.4s
+  z-index: 5
+
+
+  &.menu-active
+    left: 0
+
+
+  & a
+    color: variables.$primary-text-color
+    font-size: 2rem
+    text-align: center
+    margin-bottom: 1rem
+    padding-bottom: 1rem
+    border-bottom: 1px solid variables.$main-color
+
 @media (max-width: 450px)
-  /* Geral */
+
   body
     overflow-x: hidden
 
@@ -417,7 +456,7 @@ i
     padding: 1.5rem
     font-size: 2rem
 
-  /* navbar */
+
   #navbar
     display: none
 
@@ -429,15 +468,13 @@ i
     max-width: 100%
     padding: 4rem 2rem
 
-
   .banner h2
     font-size: 3rem
-
 
   .banner p
     font-size: 1rem
 
-  /* Áreas de atuação */
+
   .btn
     align-self: initial
 
@@ -447,7 +484,7 @@ i
   #other-services
     flex-wrap: wrap
 
-  /* Sobre nós */
+
   #about
     gap: 0
 
@@ -457,7 +494,6 @@ i
 
   .about-description
     gap: 1rem
-
 
   .about-description i
     padding: 0
@@ -475,33 +511,28 @@ i
   #team
     margin-top: 2rem
 
-
   #team h2
     font-size: 2.5rem
 
   .employees
     flex-wrap: wrap
 
-  /* Contato */
+  
   #contact
     padding-bottom: 0
-
 
   #contact-information
     padding: 7rem 1rem
 
-
   #contact-information .form-control
     flex-direction: column
-
 
   #contact-information .btn
     align-self: auto
 
-  /* Rodapé */
+  
   #footer
     flex-wrap: wrap
-
 
   #footer i
     font-size: 2rem
@@ -515,7 +546,6 @@ i
 
   .links-container
     margin-bottom: 1rem
-
 
   .links-container h4
     margin-bottom: 1.5rem
