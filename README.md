@@ -1,5 +1,5 @@
 <h1 align="center">
-  Pearson Hardman
+  Pearson Hardman 💼
 </h1>
 
 <p align="center">
