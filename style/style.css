@@ -55,6 +55,15 @@ i {
 #navbar a {
   color: #fff;
   font-weight: bold;
+  transition: 0.3s;
+}
+#navbar a:hover {
+  color: #d92123;
+  transition-duration: 0.3s;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0px 10px 0px 10px;
+  height: 100%;
 }
 
 .banner.active {
@@ -141,6 +150,11 @@ i {
   color: #fff;
   background-color: #d92123;
   align-self: flex-end;
+  transition: 0.3s;
+}
+.btn:hover {
+  scale: 1.1;
+  transition-duration: 0.3s;
 }
 
 .image-container {

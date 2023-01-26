@@ -8,6 +8,7 @@
 
 a
   text-decoration: none
+    
 
 img
   width: 100%
@@ -49,6 +50,16 @@ i
 #navbar a
   color: variables.$primary-text-color
   font-weight: bold
+  transition: .3s
+  &:hover
+    color: variables.$main-color
+    transition-duration: .3s
+    background-color: #fff
+    border-radius: 8px
+    padding: 0px 10px 0px 10px
+    height: 100% 
+    
+
 
 .banner.active
   opacity: 1
@@ -125,6 +136,10 @@ i
   color: variables.$primary-text-color
   background-color: variables.$main-color
   align-self: flex-end
+  transition: 0.3s
+  &:hover
+    scale: 1.1
+    transition-duration: .3s
 
 .image-container
   flex: 1 1 300px
