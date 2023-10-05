@@ -42,9 +42,10 @@ function showSlides() {
     slideIndex = 1;
   }
 
+
   slides[slideIndex - 1].classList.add("active");
   dots[slideIndex - 1].classList.add("active");
-
+  
   setTimeout(showSlides, 2500);
 }
 

@@ -82,21 +82,22 @@ i {
   font-size: 4rem;
   margin-bottom: 1.2rem;
   position: relative;
-  z-index: 2;
+  z-index: 99;
 }
 .banner p {
   font-size: 1.5rem;
+  z-index: 99;
 }
 
 .square {
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   background-color: #d92123;
   position: absolute;
-  z-index: 1;
-  left: 20px;
-  top: 30px;
+  z-index: 0;
+  left: 30px;
+  top: 25px;
 }
 
 .dots {
@@ -527,7 +528,7 @@ i {
     display: none;
   }
   #menu,
-#close-menu {
+  #close-menu {
     display: block;
   }
   .banner {
@@ -553,7 +554,7 @@ i {
     gap: 0;
   }
   #about-text,
-#about-data {
+  #about-data {
     flex: 1 1 100%;
   }
   .about-description {
@@ -613,7 +614,7 @@ i {
     margin-bottom: 1.5rem;
   }
   .contact-info,
-.links-container {
+  .links-container {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
